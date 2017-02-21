@@ -2,14 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>How many fingers</title>
+        <title>For Loop</title>
     </head>
     
     <body>
         
         
     	<script type="text/javascript">
-            
+            var array = ["uno", "dos", "tres", "cuatro"];
+
+            // for tradicional
+            // for (var i = 0; i <= array.length; i++) {
+            //     console.log(array[i]);
+            // };
+
+            // for mejorado
+            for(var numero in array){
+
+                if (array[numero] == "tres") {
+                    break;
+                };
+                console.log(array[numero]);
+            }
+
     	</script>
     </body>
 </html>
