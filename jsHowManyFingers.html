@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>How many fingers</title>
+    </head>
+    
+    <body>
+        
+        <p>Cuantos dedos tengo</p>
+        <p><input type="text" id="palabra"></p>
+        <p><button id="revisar">Verificar</button></p>
+    	<script type="text/javascript">
+            document.getElementById("revisar").onclick = function(){
+                var dedos = Math.floor(Math.random() * 6);
+                var valorInput = document.getElementById("palabra").value;
+                var correcto = "Felicidades has adivinado tengo ";
+                var error = "Intenta de nuevo el valor correcto era. . . ";
+
+                if (valorInput == dedos){
+                    alert(correcto + dedos);
+                }else {
+                    alert(error + dedos);
+                }
+            }
+    	</script>
+    </body>
+</html>

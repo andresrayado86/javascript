@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+    </head>
+    
+    <body>
+
+    	<script type="text/javascript">
+
+            var colores = ["blanco", "negro", "azul"];
+
+            // push se usa para agregar un elemento al final del arreglo
+            colores.push("morado");
+
+            // splice elimina los elementos del array primer parametro a partir de que elemento empieza y segundo parametro son los elementos a eliminar
+            // colores.splice(1, 2);
+            // cuando la funcion splice tiene 3 parametros el tercer se insertara un posicion antes del valor de inicio pasado en el primer parametro, se puede agragar cualquier cantidad de valores separados por coma.
+            colores.splice(1, 0, "gris", "rojo", "amarillo");
+            console.log(colores);
+                		
+    	</script>
+    </body>
+</html>

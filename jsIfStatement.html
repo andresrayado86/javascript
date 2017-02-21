@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+    </head>
+    
+    <body>
+        
+        <p>Cual es la palabra magica</p>
+        <p><input type="text" id="palabra"></p>
+        <p><button id="revisar">Presionar</button></p>
+    	<script type="text/javascript">
+            document.getElementById("revisar").onclick = function(){
+                
+                var palabra = document.getElementById("palabra").value;
+                var magica = "andres";
+
+                if(palabra == magica){
+                    alert("La palabra ingresada es la correcta");
+                } else {
+                    alert("palabra incorrecta");
+                }
+            }
+            // var x = 2;
+
+            // if (x == 1) {
+            //     var texto = "Nuevo";
+            //     console.log(texto);
+            // }else {
+            //     var texto = "Usado";
+            //     console.log(texto);
+            // };
+
+
+                		
+    	</script>
+    </body>
+</html>

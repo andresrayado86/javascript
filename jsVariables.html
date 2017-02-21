@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+    </head>
+    
+    <body>
+    	
+        <input type="text" name="" id="caja">
+        <button id="boton">Cambia texto</button>
+        <p id="texto">Este es un texto de ejemplo</p>
+
+    	<script type="text/javascript">
+
+            
+
+            document.getElementById("boton").onclick = function(){
+                var texto = document.getElementById("caja").value;
+                document.getElementById("texto").innerHTML = texto;
+            }
+                		
+    	</script>
+    </body>
+</html>
