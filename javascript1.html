@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+    </head>
+    <style>
+        .circulo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px;
+            float: left;
+        }
+        
+        #rojo {
+            background-color: red;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        #azul {
+            background-color: blue;
+        }
+
+    </style>
+    <body>
+    	
+        <div id="rojo" class="circulo"></div>
+        <div id="verde" class="circulo"></div>
+        <div id="azul" class="circulo"></div>
+
+
+    	<script type="text/javascript">
+
+            document.getElementById("rojo").onclick = function(){
+                document.getElementById("rojo").style.display = "none";
+            }
+
+            document.getElementById("verde").onclick = function(){
+                document.getElementById("verde").style.display = "none";
+            }
+
+            document.getElementById("azul").onclick = function(){
+                document.getElementById("azul").style.display = "none";
+            }
+                		
+    	</script>
+    </body>
+</html>

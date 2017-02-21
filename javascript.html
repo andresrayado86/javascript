@@ -7,10 +7,22 @@
     <body>
     	<p id="text">Hello world!</p>
         <button id="boton">Cambia texto</button>
+        <p id="secondParagraph"></p>
+        <button id="segundoBoton">Agregar Texto</button>
+        <p id="moreText">Este es un texto</p>
+        <button id="texto-estilo">Dar estilo al texto</button>
     	<script type="text/javascript">
 
-            var click = document.getElementById("boton").onclick = function() {
+            document.getElementById("boton").onclick = function() {
                 document.getElementById("text").innerHTML = "Hola"; 
+            }
+
+            document.getElementById("segundoBoton").onclick = function() {
+                document.getElementById("secondParagraph").innerHTML = "Andres Aguilar"; 
+            }
+
+            document.getElementById("texto-estilo").onclick = function(){
+                document.getElementById("moreText").style.fontSize = "20px";
             }
                 		
     	</script>
