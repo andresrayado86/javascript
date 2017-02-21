@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>While Loop</title>
+    </head>
+    
+    <body>
+        
+        <div id="contenedor"></div>
+        
+    	<script type="text/javascript">
+            var numeros = "";
+            var array = ["uno", "dos", "tres", "cuatro"];
+
+            array.reverse();
+
+            var i = 0;
+            while(i < array.length){
+
+                
+                numeros = numeros + "<p>" + array[i] + "</p>";
+
+                i++;
+            }
+
+            document.getElementById("contenedor").innerHTML = numeros;
+
+    	</script>
+    </body>
+</html>

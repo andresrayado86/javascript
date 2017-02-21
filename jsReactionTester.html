@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reaction Tester</title>
+        <style type="text/css">
+            #shape {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <p>Tu tiempo fue: <span id="tiempoTardo"></span></p>
+        <div id="shape"></div>
+        
+    	<script type="text/javascript">
+
+            function aparecerCuadro(){
+                document.getElementById("shape").style.display = "block";
+            } 
+            
+            var start = new Date().getTime();
+
+            document.getElementById("shape").onclick = function() {
+                document.getElementById("shape").style.display = "none";
+                
+                var end = new Date().getTime();
+
+                var tiempoTomado = (end - start) / 1000;
+
+                document.getElementById("tiempoTardo").innerHTML = tiempoTomado + "s";
+            }
+            
+
+    	</script>
+    </body>
+</html>

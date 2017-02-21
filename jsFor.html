@@ -7,23 +7,28 @@
     
     <body>
         
+        <div id="contenedor"></div>
         
     	<script type="text/javascript">
+            var numeros = "";
             var array = ["uno", "dos", "tres", "cuatro"];
 
             // for tradicional
-            // for (var i = 0; i <= array.length; i++) {
+            // for (var i = array.length - 1; i >= 0; i--) {
             //     console.log(array[i]);
             // };
 
             // for mejorado
-            for(var numero in array){
+            // la funcion reverse ordenal los elementos del arreglo de forma inversa
+            for(var numero in array.reverse()){
 
-                if (array[numero] == "tres") {
-                    break;
-                };
-                console.log(array[numero]);
+                // if (array[numero] == "tres") {
+                //     break;
+                // };
+                numeros = numeros + "<p>" + array[numero] + "</p>";
             }
+
+            document.getElementById("contenedor").innerHTML = numeros;
 
     	</script>
     </body>
